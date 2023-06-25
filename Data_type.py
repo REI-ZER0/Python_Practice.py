@@ -47,4 +47,19 @@ print(tupleexample1)
 # 요소 삭제, 변경 제외하고 나머지는 리스트와 동일
 
 # 딕셔너리
-#
+# 딕셔너리 변수명 = {key1 : value1, key2 : value2...}
+dicexample = {"name" : "LKU", "age" : 25}
+print(dicexample["name"], dicexample["age"])
+# 딕셔너리 key리스트 만들기
+# key리스트는 append, insert, remove, sort 수행 불가능
+dicexample.keys()
+print(dicexample.keys()) # dict_keys(['name', 'age']) 출력됨(반환됨)
+# key리스트 속 객체들을 리스트로 변환 : list(dicexample.keys())
+print(list(dicexample.keys())) # ['name', 'age'] 출력됨
+# value 리스트 만들기 : dicexample.values()
+print(dicexample.values()) # dict_values(['LKU', 25]) 출력됨(반환됨)
+# key value 둘 다 반환 : dicexample.items()
+print(dicexample.items()) # dict_items([('name', 'LKU'), ('age', 25)]) 출력됨(반환됨)
+# key, value 둘 다 제거 : dicexample.clear()
+# dicexample.clear()
+# print(dicexample["name"], dicexample["age"]) 에러 발생
