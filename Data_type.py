@@ -63,4 +63,7 @@ print(dicexample.items()) # dict_items([('name', 'LKU'), ('age', 25)]) 출력됨
 # key, value 둘 다 제거 : dicexample.clear()
 # dicexample.clear()
 # print(dicexample["name"], dicexample["age"]) 에러 발생
+# key로 value 얻기 : dicexample.get("name")
+# dicexample["name"]과 동일한 값을 반환하지만, get을 사용하면 key값이 딕셔너리에 없을때 None을 반환함(그냥 쓰면 에러 발생)
+print(dicexample.get("name")) # LKU 출력
 
