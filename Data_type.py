@@ -63,3 +63,4 @@ print(dicexample.items()) # dict_items([('name', 'LKU'), ('age', 25)]) 출력됨
 # key, value 둘 다 제거 : dicexample.clear()
 # dicexample.clear()
 # print(dicexample["name"], dicexample["age"]) 에러 발생
+
