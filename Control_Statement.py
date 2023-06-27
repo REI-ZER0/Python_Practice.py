@@ -32,4 +32,3 @@ while money:
     if money == 0:
         print("돈이 없어 커피를 구매하실수 없습니다")
         break
-
