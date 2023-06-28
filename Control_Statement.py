@@ -41,6 +41,17 @@ while whileexample < 10:
     print(whileexample)
 
 # for문 : for 변수 in 리스트, 튜플, 문자열: 수행문1... 수행문2...
-forexample = [1, 2, 3]
+forexample = [1, 2, 3, 4, 5]
 for i in forexample: # 리스트의 1, 2, 3이 i에 대입됨
     print("for문 테스트", i)
+# for문에서 continue문 사용 가능, while문과 동일하게 continue 사용하면 for문 처음으로 돌아감
+forexample2 = [90, 25, 67, 45, 80]
+n = 0
+for i in forexample2:
+    n += 1
+    if i < 60: # forexample2에서 60미만이면 for문 처음으로 돌아감
+        continue
+    print("%d is Pass" % n)
+# range(정수1, 정수2) : 정수1에서부터 정수2 - 1까지 범위 지정, for문의 in 뒤에 사용하여 반복범위 지정
+for i in range(0, 5):
+    print(i) # 0, 1, 2, 3, 4 출력됨
