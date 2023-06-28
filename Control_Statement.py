@@ -32,3 +32,15 @@ while money:
     if money == 0:
         print("돈이 없어 커피를 구매하실수 없습니다")
         break
+# continue : while문의 맨 처음으로 돌아감
+whileexample = 0
+while whileexample < 10:
+    whileexample += 1
+    if whileexample % 2 == 0: # 짝수면 while문의 맨 처음으로 돌아가서 수행문 실행
+        continue
+    print(whileexample)
+
+# for문 : for 변수 in 리스트, 튜플, 문자열: 수행문1... 수행문2...
+forexample = [1, 2, 3]
+for i in forexample: # 리스트의 1, 2, 3이 i에 대입됨
+    print("for문 테스트", i)
